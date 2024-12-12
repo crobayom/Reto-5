@@ -1,30 +1,70 @@
-# Reto-5
+# Asuma que el pinguno es un cilindro
+En este repositorio se socializara el recorrido para cumplir con el reto 5
 
-1. 4
+##1. 
 
-Calcular volumen y area superficial (matematica):
+
+### 1) Calcular volumen y area superficial (matematica)
+
 Volumen: 
+
 (4/3)*pi*r1**3+pi*r2**2*h*(1/3)
 
+
 Area:
+
 4*pi*r1**2+pi*r2**2+pi*r2*((r2**2+h**2)**0.5)
 
+
+### 2) Crear dos funciones para calcular el volumen y el area superficial
 
 ```
 def volumen_figura (pi:float,r1:float,r2:float,h:float,volumen:float) -> float:
   volumen:float=(4/3)*pi*r1**3+pi*r2**2*h*(1/3)
   return volumen
-```
 
-```
+
 def volumen_figura (pi:float,r1:float,r2:float,h:float,area:float) -> float:
   area:float=4*pi*r1**2+pi*r2**2+pi*r2*((r2**2+h**2)**0.5)
   return area
 ```
 
+### 3) Como usar pi con  import math y math.pi
 
-#Como usar pi con  import math y math.pi
+Luego de investigar encontre que para usar a pi con la biblioteca math, y definiendo una variable igualada a la operacion matematica definida math.pi
+de esta manera:
 
+```
+import math
+pi=math.pi
+print(pi)
+```
+
+Ejecutando este codigo se podra ver el numero que se le asigno al identificador elegido, la longitud de este dependera de la presicion disponible
+
+4) Finalmente el programa completo teniendo ambos calculos, seria el siguiente:
+
+```
+import math
+pi=math.pi
+def volumen_figura (pi:float,r1:float,r2:float,h:float,volumen:float) -> float:
+  volumen:float=(4/3)*pi*r1**3+pi*r2**2*h*(1/3)
+  return volumen
+
+def volumen_figura (pi:float,r1:float,r2:float,h:float,area:float) -> float:
+  area:float=4*pi*r1**2+pi*r2**2+pi*r2*((r2**2+h**2)**0.5)
+  return area
+
+if __name__=="__main__":
+  pi:float
+  r1:float
+  r2:float
+  h:float
+  volumen:float
+  
+  volumen_figura()
+  print(volumen)
+```
 
 2. a
 
@@ -48,6 +88,19 @@ def perimetro_figura (b:float,a:float,r:float,pi:float) -> float:
 
 #Como usar pi con  import math y math.pi
 
+#Como usar pi con  import math y math.pi
+
+Luego de investigar encontre que para usar a pi con la biblioteca math, y definiendo una variable igualada a la operacion matematica definida math.pi
+de esta manera:
+
+´´´
+import math
+pi=math.pi
+print(pi)
+´´´
+
+Ejecutando este codigo se podra ver el numero que se le asigno al identificador elegido, la longitud de este dependera de la presicion disponible                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+
 3. 
 
 def kilos_animales (gallinas:int,gallos:int,pollitos:int,peso:int):
@@ -55,7 +108,7 @@ def kilos_animales (gallinas:int,gallos:int,pollitos:int,peso:int):
   gallos:int
   pollitos:int
   peso:int
-  peso=gallinas*6+gallos*7+pollitos  
+  peso=gallinas*6+gallos*7+pollitos                          
   return peso
 
 4. 
