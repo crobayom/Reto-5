@@ -3,7 +3,7 @@ En este repositorio se socializara el recorrido para cumplir con el reto 5
 
 ##1. 
 
-[Ejercicio 1](https://camo.githubusercontent.com/9a79fe9629fff1ceecb5860dba4054b90da7acda3d4f2c9cd7f62a34799894d2/68747470733a2f2f692e706f7374696d672e63632f465276436d7078782f696d6167652e706e67)
+![Ejercicio 1](https://camo.githubusercontent.com/9a79fe9629fff1ceecb5860dba4054b90da7acda3d4f2c9cd7f62a34799894d2/68747470733a2f2f692e706f7374696d672e63632f465276436d7078782f696d6167652e706e67)
 
 
 ### 1) Calcular volumen y area superficial (matematica)
@@ -73,7 +73,7 @@ if __name__=="__main__":
 
 ## 2. 
 
-[Ejercicio 2](https://camo.githubusercontent.com/1e035694c4675debe6703e3771f67ff06d8da330997d02c3806aa2bd5936bc54/68747470733a2f2f692e706f7374696d672e63632f3174344d727a734c2f696d6167652e706e67)
+![Ejercicio 2](https://camo.githubusercontent.com/1e035694c4675debe6703e3771f67ff06d8da330997d02c3806aa2bd5936bc54/68747470733a2f2f692e706f7374696d672e63632f3174344d727a734c2f696d6167652e706e67)
 
 ### 1) Calcular area y perimetro (matematica):
 
@@ -337,10 +337,167 @@ if __name__=="__main__":
   print("La raiz cubica del menor numero es: "+str(raiz_cubica_del_menor_numero(primero,segundo,tercero,cuarto,quinto,menor)))
 ```
 
-5. #Consultar qué es y cómo funciona pip en python.
+6. #Consultar qué es y cómo funciona pip en python.
 
-6. #Hacer un listado de módulos populares para python que se puedan instalar com pip y consultar cómo instalarlos.
+  El nombre de pip, en python, corresponde a un acronimo que viene de: pip Install Packages (on instalador de paquetes pip, en español).
+  pero
 
+  ¿Que son los paquetes en python? 
+  Comenzemos por dar contexto, en python, se utilizan muchas operaciones, de suma, de resta, de igualdad, de desigualdad, etc. Y cuando ya se tiene un tiempo programando, es facil darse cuenta que la forma de "programar" estas operaciones pueden definirse como algoritmos, entonces, ya se plantea una estructura detallada, se tiene la idea de como hacerla cada vez que se requiera y se ahorra el tiempo de tomarse el trabajo de "redefinir" los conceptos de la programcion y la mecanizacion de procesos; Simplemente se tiene un "estandar", pero luego de nuevo con pensamiento critico y propositivo, se llega a la conclusion de que estos algoritmos pueden ser funciones estandarizadas, entonces se define una funcion con la capacidad de "replicar" ese algortimo cada vez que se necesite, y ahora, se tiene la posibilidad de simplementa llamar la funcion cuando se necesite y ahorrarse reescribir el algoritmo cada vez; De igual manera, con mas tiempo y pensamiento critico y propostivo, se dara cuenta que la definicion de estas funciones entre programas es un proceso repetitivo y facilmente transformable a un algoritmo, de modo que ahora, se crearan algo llamado LIBRERIAS/BIBLIOTECAS (o LIBRARIES en ingles), que contienen todas esas funciones definidas (con sus respectivas transformaciones para que funcionen en cuaquier programa), de manera que ahora, no tengo que pensar en como podria restar dos numeros, tampoco tengo que escribir repetidas veces este proceso, ni tengo que definir una funcion con la operacion cada vez que la necesite (en cada programa), y tan solo necesitare importar la libreria cada vez que necesite esa operacion especifica; Este metodo de las librerias es lo que hizo muy populares a lenguajes como python y c, por su practicidad y utilidad.
+  
+  ¿De donde vienen las librerias?
+  Las librerias vienen en paquetes que traen lo necesario para que funcionen luego de instalarse, cosas como los archivos relacionados, los modulos de la libreria (o paquete), y demas dependencias que requiera la libreria; Estos pueden encontrarse de dos formas, primero, como es facil imaginarselo, en internet se suben las librerias para que esten a disposicion del publico (la mayoria de uso gratuito) en algunas paginas que recopilan estas librerias aceptadas por la comunidad de python, tales como: [Python Package Index (PyPi)](https://pypi.org/) o [Anaconda](https://anaconda.org/anaconda/repo); Adicionalmente a las librerias que ya estan dentro de internet, python trae por defecto una libreria ya instalada llamada [Python Standard Library](https://docs.python.org/3/library/), esta contiene soluciones a los problemas diarios de la programcion en forma de las librerias instaladas que pueden ser importadas sin necesidad de instalar o hacer algun proceso adicional.
+  
+  ¿Para que necesito un instalador?
+    Como ya se menciono, python trae una libreria por defecto, que permite importar sin pasos extra, y ese misma caracteristica de evitar pasos extra, es para lo que funcionma el instalador, te evita de tener que buscar donde estan los archivos, apilarlos, ordenarlos, relacionarlos, adaptarlos a tu python, agregar las cosas que sean necesarias para que funcionen (dependencias), actualizarlos (y lo que conlleve), configurarlos (y lo que conlleve), borrarlos (y lo que conlleve) etc. Simplemente se le da la orden de que instale la libreria y lo necesario para ella, y el hara el resto del trabajo, por lo tanto es eficiente, util, y amigable con quien lo necesite, para que no deba volverse un experto en ese tema, simplemente viene a conseguir una biblioteca, y eso lo ayudara a hacer solamente eso; ¿Y como se relaciona esto con el pip? El pip es precisamente eso, una herramienta que gestiona la descaerga e instalacion de paquetes y sus complementos de python (y las mas popular).
 
+  ¿Como uso pip?
+  Tomando el caso de que ya se haya comprobado que se tenga pip instalado y el python 3+ instalado y ejectuado por defecto en simbolo del sistema con el comando ``` python --version ``` (la version que le sea pertinente instalar, en este curso utilizamos python 3+, por lo que se explicara para esa version) y el nombre de la biblioteca deseada encontrado, solo se ingresa al simbolo del sistema y desde ahi se coloca la siguiente estructura:
 
+```
+pip install nombre_del_paquete
+```
+En caso de que solo se tenga una version de python instalada
 
+o
+
+```
+python3 -m pip install nombre_del_paquete (por ejemplo frutas)
+```
+
+Tambien es probable que se necesite instalar una version especfica del paquete y esto pip, lo permite, usando la siguiente estructura:
+
+```
+pip install nombre_del_paquete==version_deseada (por ejemplo 1.4.2)
+```
+
+O quizaz sea pertinente instalar una verison que este entre otras, pip, permite hace esto, y lo hace a travez del uso de logica de booleanos, asi:
+
+```
+pip install nombre_del_paquete>=condicion,<otra_condicion
+```
+
+Los paquetes tienen algo llamado dependencias, que son basicamente mas paquetes que el paquete principal necesita para funcionar y son descargados automaticamente por pip, como en el siguiente ejemplo, instalando scikit-learn:
+
+```
+pip install Scikit-learn
+```
+
+![image](https://github.com/user-attachments/assets/a0dd1862-90d0-497e-a9a8-792e8c332eb3)
+
+Aqui se nota como es que ademas de descargar el paquete de scikit-learn descarga las dependencias adicionales de Scikit-learn
+
+Cuando se trabaja en equipo, muchas veces es necesario que se instalen las mismas librerias y versiones, esto se puede hacer teniendo una lista de las librerias y sus verisiones e ir instalando una por una cada persona, pero.... como siempre, esto puede ser un algoritmo y pip lo aprueba, porque tiene una funcion que admite recibir un documento de texto (generalmente llamado requirements) que tenga las librerias y sus versiones e instalarlas, esto funciona con la siguiente estructura (el archivo de texto debe estar dentro del rango de accion del ambiente virtual en el que se abre el simbolo del sistema): 
+
+(dentro del documento de texto debe estar:
+nombre__del_paquete==version_deseada
+nombre__del_paquete2==version_deseada
+nombre__del_paquete3==version_deseada
+
+```
+pip install -r nombre_del_archivo.txt
+```
+
+De igual manera, sino quieres hacer la lista cada vez que la necesites, podrias instalar los paquetes que necesites y usar:
+
+```
+pip freeze > nombre_del_archivo.txt
+```
+
+Si se quiere visualizar los paquetes instalados en el ambiente virtual antes de crear la lista, se usa:
+
+```
+pip list
+```
+
+Esto generara un archivo de texto de nombre "nombre_del_archivo" que podra ser compartido con los demas compañeros
+
+Tambien es comun que se deban actualizar los paquetes de instalacion, por lo que se podra usar el siguiente comando para actualizarlas:
+
+```
+pip install --upgrade nombre_del_archivo
+```
+
+Asi tambien los archivos de paquetes de instalacion pueden ser usados para actualizar cada paquete especificado en el, hecho asi:
+
+```
+pip install -r requirements.txt --upgrade
+```
+
+El pip, tambien permite borrar paquetes de instalacion usando:
+
+```
+pip uninstall nombre_del_paquete
+```
+
+De igual manera se puede hacer con las listas
+
+```
+pip uninstall -r nombre_del_archivo.txt
+```
+
+(Lo siguiente no lo tengo tan claro en su funcionamiento, pero si su teoria)
+Github es una de las plataformas (ademas de las ya mencionadas) que pueden alojar los paquetes en python, y pip permite instalarlos desde ahi, simplemente se necesita encontrar el respositorio que tenga el paquete que requerido y el ejecutable funcional para instalarlo, siendo asi su estructura (solo para descargarlo directamente desde un respositorio, si se quiere hacerlo en una rama, una version especifica o un commit especifico, se tendra que usar otro metodo):
+
+```
+pip install git+https://github.com/usuario/nombre_respositorio.git
+```
+
+  Adicionalmente, si se llegar a necesitar una especificacion de los distintos comandos que tiene pip, se puede usar:
+
+```
+pip help
+```
+
+  Si se quiere ver el resumen de un paquete se usa:
+
+```
+pip show [nombre_del_paquete]
+```
+
+  A pesar de lo extraño que pueda ser, es posible que pip no este instalado (a pesar de tener python instalado), esto generalmente sucede por tener una version antigua de python (pip viene generalmente instalado desde 2.7.9 y 3.4, hacia adelante) y se puede corregir instalando el pip, con el siguiente codigo (de nuevo solo se explica para python 3+ pues es lo pertinente para el curso):
+
+```
+  python3 -m ensurepip --default-pip
+```
+
+  Algo mas comun de encontrar es que el pip no este actualizado a la ultima version, esto se puede solucionar con el siguiente codigo:
+
+```
+pip install –upgrade pip setuptools wheel
+```
+
+  La informacion anteriormente descrita la obtuve a partir de [esta](https://www.datacamp.com/tutorial/pip-python-package-manager#rdl) pagina web, la recomiendo, explica muy bien el tema y si se quiere explorar un poco mas, es excelente
+
+7. #Hacer un listado de módulos populares para python que se puedan instalar com pip y consultar cómo instalarlos.
+
+(Hay otro ejemplo de instalar bibliotecas populares en donde se explica que los paquetes tienen dependencias, es la instalacion de Scikit-learn)
+
+[Librerias de python](https://immune.institute/blog/librerias-python-que-son/)
+
+PyTorch
+Es una libreria que es usada para las redes neuronales, esta compuesta de 3 partes principales, torch "el principal" (Núcleo principal de PyTorch para tensores y redes neuronales), torchvision (Herramientas para visión por computadora (datasets, modelos, transformaciones)) y torchaudio (Herramientas para procesamiento de audio (datasets, transformaciones, modelos)); Se puede instalar solo uno o el principal y alguno en especifico, o todos directamente, aqui se presentaran todos directamente para mostrar que se pueden instalar varios al mismo tiempo (esto con el fin de que todos se instalen en la misma version, evitando asi problemas de compatibilidad):
+
+Codigo para instalarlo: 
+
+```
+pip install torch torchvision torchaudio
+```
+
+Pandas
+Es una libreria ampliamente usada en ciencia de datos, la cual provee estructuras de datos expresivas para que sea sencillo e intituivo trabajar con ellas
+
+Codigo para instalarlo: 
+
+```
+pip install pandas
+```
+
+NumPy
+Es una libreria usada en ciencia de datos para tener arreglos de tamaño n y trabaja sobre ellas, tiene vectores multidimensionales
+
+Codigo para instalarlo:
+
+```
+pip install numpy
+```
