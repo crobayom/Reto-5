@@ -1,7 +1,7 @@
 # Asuma que el pinguno es un cilindro
 En este repositorio se socializara el recorrido para cumplir con el reto 5
 
-##1. 
+## 1. 
 
 ![Ejercicio 1](https://camo.githubusercontent.com/9a79fe9629fff1ceecb5860dba4054b90da7acda3d4f2c9cd7f62a34799894d2/68747470733a2f2f692e706f7374696d672e63632f465276436d7078782f696d6167652e706e67)
 
