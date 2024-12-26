@@ -9,14 +9,14 @@ En este repositorio se socializara el recorrido para cumplir con el reto 5
 ### 1) Calcular volumen y area superficial (matematica)
 
 Volumen: 
-
+```
 (4/3)*pi*r1**3+pi*r2**2*h*(1/3)
-
+```
 
 Area:
-
+```
 4*pi*r1**2+pi*r2**2+pi*r2*((r2**2+h**2)**0.5)
-
+```
 
 ### 2) Crear dos funciones para calcular el volumen y el area superficial
 
@@ -78,11 +78,13 @@ if __name__=="__main__":
 ### 1) Calcular area y perimetro (matematica):
 
 Area: 
+```
 b*a+2*r**2*pi
-
+```
 Perimetro:
+```
 2b+2a+2*(2*pi*r)
-
+```
 ### 2) Cree dos funciones en python para calcular los valores antes establecidos, al ingresar por teclado r, a y b.
 
 
